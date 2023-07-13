@@ -31,6 +31,7 @@ enum Main {
         let type: String
         let gender: String
         let origin: String
+        let originData: Origin
         init (post: Post) {
             self.image = nil
             self.name = post.name
@@ -39,6 +40,7 @@ enum Main {
             self.type = "Type: \(post.type.isEmpty ? "none" : post.type)"
             self.gender = "Gender: \(post.gender)"
             self.origin = "Origin: \(post.origin.name)"
+            self.originData = post.origin
         }
         
         mutating func set(image: Image){

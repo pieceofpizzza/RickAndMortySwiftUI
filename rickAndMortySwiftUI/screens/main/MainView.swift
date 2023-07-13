@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @ObservedObject var viewModel: MainViewModel = MainViewModel()
+    @State private var isShow: Bool = false
     var body: some View {
         VStack {
             viewModel.data?.image?
@@ -25,7 +26,9 @@ struct MainView: View {
                     Text(viewModel.data?.type ?? "")
                     Text(viewModel.data?.gender ?? "")
                     Button {
-                        print("itWorks")
+                        if viewModel.data != nil {
+                            isShow = true
+                        }
                     } label: {
                         Text(viewModel.data?.origin ?? "")
                             .foregroundColor(Color.black)
@@ -41,5 +44,8 @@ struct MainView: View {
         }
         .padding(30)
         .background(Color.green)
+        .sheet(isPresented: $isShow) {
+            ModalView(vm: ModalViewModel(data: viewModel.data!.originData), isShow: $isShow)
+        }
     }
 }

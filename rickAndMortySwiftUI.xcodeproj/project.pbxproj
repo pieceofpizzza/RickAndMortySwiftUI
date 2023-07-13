@@ -17,6 +17,7 @@
 		6146A5D92A585FF000A76F70 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6146A5D82A585FF000A76F70 /* ModalView.swift */; };
 		6146A5DB2A58600000A76F70 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6146A5DA2A58600000A76F70 /* ModalViewModel.swift */; };
 		6146A5DD2A58600E00A76F70 /* ModalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6146A5DC2A58600E00A76F70 /* ModalModel.swift */; };
+		6146A5DF2A6069F200A76F70 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6146A5DE2A6069F200A76F70 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6146A5D82A585FF000A76F70 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		6146A5DA2A58600000A76F70 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 		6146A5DC2A58600E00A76F70 /* ModalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalModel.swift; sourceTree = "<group>"; };
+		6146A5DE2A6069F200A76F70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		6146A5B52A585EDC00A76F70 = {
 			isa = PBXGroup;
 			children = (
+				6146A5DE2A6069F200A76F70 /* README.md */,
 				6146A5C02A585EDC00A76F70 /* rickAndMortySwiftUI */,
 				6146A5BF2A585EDC00A76F70 /* Products */,
 			);
@@ -167,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6146A5DF2A6069F200A76F70 /* README.md in Resources */,
 				6146A5C92A585EDE00A76F70 /* Preview Assets.xcassets in Resources */,
 				6146A5C62A585EDE00A76F70 /* Assets.xcassets in Resources */,
 			);
